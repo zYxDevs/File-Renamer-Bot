@@ -87,7 +87,8 @@ async def help(client, message):
                chat_id=message.chat.id,
                text="""<b>File Renamer Help!
 
-👉 Send any thumbnail to me (Do <code>/delthumb</code> to delete thumbnail)
+👉 Send any thumbnail to me 
+[Do <code>/delthumb</code> to delete thumbnail]
 
 👉 Then send any telegram media file to me
 

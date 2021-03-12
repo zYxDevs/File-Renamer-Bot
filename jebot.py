@@ -61,7 +61,7 @@ async def start(client, message):
    if message.chat.type == 'private':
        await bot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hey There, I'm a File Renamer Bot
+               text="""<b>Hey There, I'm a File Renamer Bot With Permenent Thumbnail Support!
 
 Made by @ImJanindu 🇱🇰
 
@@ -87,9 +87,11 @@ async def help(client, message):
                chat_id=message.chat.id,
                text="""<b>File Renamer Help!
 
-👉 Forward any telegram media file to me
+👉 Send any thumbnail to me
 
-👉 Then reply it with <code>/rename NewFile.extension</code>
+👉 Then send any telegram media file to me
+
+👉 Finally reply file with <code>/rename NewFile.extension</code>
 
 ~ @Infinity_BOTs</b>""",
     reply_markup=InlineKeyboardMarkup(

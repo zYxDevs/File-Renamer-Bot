@@ -41,12 +41,21 @@ from pyrogram import Client, filters
 from PIL import Image
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery, InlineQuery, InputTextMessageContent
 
-bot = Client(
-   "File Renamer",
-   api_id=Config.APP_ID,
-   api_hash=Config.API_HASH,
-   bot_token=Config.TG_BOT_TOKEN,
-)
+if __name__ == "__main__" :
+    # create download directory, if not exist
+    if not os.path.isdir(Config.DOWNLOAD_LOCATION):
+        os.makedirs(Config.DOWNLOAD_LOCATION)
+    plugins = dict(
+        root="plugins"
+    )
+    bot = pyrogram.Client(
+        "File Renamer",
+        bot_token=Config.TG_BOT_TOKEN,
+        api_id=Config.APP_ID,
+        api_hash=Config.API_HASH,
+        plugins=plugins
+    )
+    app.run()
 
 @bot.on_message(filters.command("start"))
 async def start(client, message):

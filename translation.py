@@ -9,3 +9,6 @@ class Translation(object):
     SAVED_RECVD_DOC_FILE = "<b>Document Downloaded Successfully 😙</b>"
     CUSTOM_CAPTION_UL_FILE = "Uploaded by @FileRenamerIBot"
     REPLY_TO_DOC_FOR_RENAME_FILE = "<b>Reply to a Telegram media with new file name</b>"
+    DEL_ETED_CUSTOM_THUMB_NAIL = "<b>✅ Custom thumbnail cleared succesfully.</b>"
+    FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "<b>✅ Media cleared succesfully.</b>"
+    NO_CUSTOM_THUMB_NAIL_FOUND = "<b>No Custom ThumbNail found 🤷‍♂️</b>"

@@ -55,7 +55,6 @@ if __name__ == "__main__" :
         api_hash=Config.API_HASH,
         plugins=plugins
     )
-    app.run()
 
 @bot.on_message(filters.command("start"))
 async def start(client, message):

@@ -12,3 +12,4 @@ pySmartDL
 hachoir
 psycopg2-binary
 ffmpeg
+sqlalchemy

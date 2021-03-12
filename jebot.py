@@ -61,7 +61,7 @@ async def start(client, message):
    if message.chat.type == 'private':
        await bot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hey There, I'm a File Renamer Bot With Permenent Thumbnail Support!
+               text="""<b>Hey There, I'm a File Renamer Bot With Permanent Thumbnail Support!
 
 Made by @ImJanindu 🇱🇰
 

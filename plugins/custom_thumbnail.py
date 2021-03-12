@@ -11,10 +11,9 @@ from translation import Translation
 
 import database as sql
 from database import *
-from jebot import bot
 
 
-@bot.on_message(filters.private & filters.photo)
+@Client.on_message(filters.private & filters.photo)
 async def save_photo(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
         await bot.delete_messages(
@@ -49,7 +48,7 @@ async def save_photo(bot, update):
         )
 
 
-@bot.on_message(filters.private & filters.command(["delthumb"]))
+@Client.on_message(filters.private & filters.command(["delthumb"]))
 async def delete_thumbnail(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
         await bot.delete_messages(
@@ -77,7 +76,7 @@ async def delete_thumbnail(bot, update):
 
 
 
-@bot.on_message(filters.private & filters.command(["showthumb"]))
+@Client.on_message(filters.private & filters.command(["showthumb"]))
 async def show_thumb(bot, update):
     if update.from_user.id in Config.BANNED_USERS:
         await bot.delete_messages(

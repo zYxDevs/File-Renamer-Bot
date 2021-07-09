@@ -61,9 +61,10 @@ async def start(client, message):
    if message.chat.type == 'private':
        await bot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hey There, I'm a File Renamer Bot With Permanent Thumbnail Support!
+               text="""<b>Hey There, I'm a File Rename Bot With Permanent Thumbnail Support!
+Remember to Check @NekoPoiHNTch 🔞
 
-Made by @ImJanindu 🇱🇰
+Made with ❤ by @Yoga_CIC
 
 Hit help button to find out more about how to use me</b>""",   
                             reply_markup=InlineKeyboardMarkup(
@@ -71,7 +72,7 @@ Hit help button to find out more about how to use me</b>""",
                                         InlineKeyboardButton(
                                             "Help", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Channel", url="https://t.me/Infinity_BOTs"),
+                                            "Channel", url="https://t.me/SpreadNetworks"),
                                  ],[
                                         InlineKeyboardButton(
                                             "Source Code", url="https://github.com/ImJanindu/File-Renamer-Bot")
@@ -94,7 +95,7 @@ async def help(client, message):
 
 👉 Finally reply file with <code>/rename NewFile.extension</code>
 
-~ @Infinity_BOTs</b>""",
+~ @SpreadNetworks</b>""",
     reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -116,13 +117,13 @@ async def about(client, message):
                chat_id=message.chat.id,
                text="""<b>About File Renamer!</b>
 
-<b>♞ Developer:</b> <a href="https://t.me/ImJanindu">Janindu 🇱🇰</a>
+<b>♞ Developer:</b> <a href="https://t.me/Yoga_CIC">Yoga Pranata</a>
 
-<b>♞ Support:</b> <a href="https://t.me/InfinityBOTs_Support">Infinity BOTs Support</a>
+<b>♞ Support:</b> <a href="https://t.me/YBotsSupport">Support Chat</a>
 
 <b>♞ Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
 
-<b>~ @Infinity_BOTs</b>""",
+<b>~ @SpreadNetworks</b>""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
